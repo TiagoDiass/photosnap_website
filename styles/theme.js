@@ -1,9 +1,9 @@
 export default {
   colors: {
     // Main colors
-    peachOrange: 'rgb(255,197,147)',
-    turkishRose: 'rgb(188, 113, 152)',
-    dodgerBlue: 'rgb(90, 119, 255)',
+    peach: 'rgb(255,197,147)',
+    rose: 'rgb(188, 113, 152)',
+    blue: 'rgb(90, 119, 255)',
 
     // Secondary Colors
     black: 'rgb(0,0,0)',
