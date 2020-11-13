@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import {
   HeaderWrapper,
@@ -9,28 +10,33 @@ import {
 
 const Header = () => {
   return (
-    <HeaderWrapper>
-      <HeaderNav>
-        <HeaderLogo>
-          <Link href='/'>
-            <img src='/images/logo.svg' alt='PHOTOSNAP' />
-          </Link>
-        </HeaderLogo>
+    <>
+      <Head>
+        <title>Photosnap</title>
+      </Head>
+      <HeaderWrapper>
+        <HeaderNav>
+          <HeaderLogo>
+            <Link href='/'>
+              <img src='/images/logo.svg' alt='PHOTOSNAP' />
+            </Link>
+          </HeaderLogo>
 
-        <NavigationList>
-          <li>
-            <Link href='/'>Stories</Link>
-          </li>
-          <li>
-            <Link href='/'>Features</Link>
-          </li>
-          <li>
-            <Link href='/'>Pricing</Link>
-          </li>
-        </NavigationList>
-        <CallToActionButton>Get an invite</CallToActionButton>
-      </HeaderNav>
-    </HeaderWrapper>
+          <NavigationList>
+            <li>
+              <Link href='/'>Stories</Link>
+            </li>
+            <li>
+              <Link href='/'>Features</Link>
+            </li>
+            <li>
+              <Link href='/'>Pricing</Link>
+            </li>
+          </NavigationList>
+          <CallToActionButton>Get an invite</CallToActionButton>
+        </HeaderNav>
+      </HeaderWrapper>
+    </>
   );
 };
 

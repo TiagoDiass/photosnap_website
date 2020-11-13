@@ -9,7 +9,6 @@ const globalStyle = createGlobalStyle`
 
   body {
     font-family: 'DM Sans', sans-serif;
-    background-color: #ccc;
   }
 
   *, *::after, *::before{
