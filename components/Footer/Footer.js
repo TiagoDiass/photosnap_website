@@ -4,6 +4,7 @@ import {
   LeftBlockFooter,
   SocialMediaRow,
   LogoAndSocialMediaBlock,
+  NavigationList,
 } from './Footer.elements';
 
 const socialMedias = [
@@ -50,6 +51,20 @@ const Footer = () => {
               ))}
             </SocialMediaRow>
           </LogoAndSocialMediaBlock>
+          <NavigationList>
+            <li>
+              <a href='#'>Home</a>
+            </li>
+            <li>
+              <a href='#'>Stories</a>
+            </li>
+            <li>
+              <a href='#'>Features</a>
+            </li>
+            <li>
+              <a href='#'>Pricing</a>
+            </li>
+          </NavigationList>
         </LeftBlockFooter>
       </FooterContent>
     </FooterWrapper>

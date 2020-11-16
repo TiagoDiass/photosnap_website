@@ -19,7 +19,6 @@ export const FooterContent = styled.div`
 `;
 
 export const LeftBlockFooter = styled.div`
-  border: 1px solid white;
   width: 40%;
 
   svg {
@@ -50,6 +49,24 @@ export const SocialMediaRow = styled.div`
 
     &:hover {
       transform: translateY(-3px);
+    }
+  }
+`;
+
+export const NavigationList = styled.ul`
+  grid-column: 2/3;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  li a {
+    transition: opacity 0.25s ease;
+
+    &:hover {
+      opacity: 0.5;
     }
   }
 `;
