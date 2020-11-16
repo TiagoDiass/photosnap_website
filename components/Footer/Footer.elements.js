@@ -70,3 +70,36 @@ export const NavigationList = styled.ul`
     }
   }
 `;
+
+export const RightBlockFooter = styled.div`
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+`;
+
+export const GetAnInviteAction = styled.a`
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.45rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  svg {
+    margin-left: 1rem;
+    transition: transform 0.15s ease;
+  }
+
+  &:hover {
+    svg {
+      transform: translateX(0.8rem);
+    }
+  }
+`;
+
+export const CopyrightText = styled.span`
+  color: ${({ theme }) => theme.colors.white};
+  opacity: 0.5;
+  font-size: 1.5rem;
+`;

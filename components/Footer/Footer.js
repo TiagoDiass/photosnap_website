@@ -1,3 +1,5 @@
+import { Arrow } from '..';
+
 import {
   FooterWrapper,
   FooterContent,
@@ -5,6 +7,9 @@ import {
   SocialMediaRow,
   LogoAndSocialMediaBlock,
   NavigationList,
+  RightBlockFooter,
+  GetAnInviteAction,
+  CopyrightText,
 } from './Footer.elements';
 
 const socialMedias = [
@@ -66,6 +71,14 @@ const Footer = () => {
             </li>
           </NavigationList>
         </LeftBlockFooter>
+
+        <RightBlockFooter>
+          <GetAnInviteAction>
+            Get an Invite <Arrow />
+          </GetAnInviteAction>
+
+          <CopyrightText>Copyright 2020. All Rights Reserved</CopyrightText>
+        </RightBlockFooter>
       </FooterContent>
     </FooterWrapper>
   );
