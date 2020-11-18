@@ -43,6 +43,10 @@ export const NavigationList = styled.ul`
       opacity: 0.5;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const CallToActionButton = styled.button`
@@ -63,5 +67,20 @@ export const CallToActionButton = styled.button`
   &:hover {
     background-color: ${({ theme }) => theme.colors.grey};
     color: ${({ theme }) => theme.colors.black};
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const MobileIcon = styled.button`
+  display: none;
+  background: transparent;
+  border: none;
+  outline: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
   }
 `;

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import {
@@ -6,9 +7,16 @@ import {
   HeaderLogo,
   NavigationList,
   CallToActionButton,
+  MobileIcon,
 } from './Header.elements';
 
 const Header = () => {
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
+
   return (
     <>
       <Head>
@@ -21,6 +29,16 @@ const Header = () => {
               <img src='/images/logo.svg' alt='PHOTOSNAP' />
             </Link>
           </HeaderLogo>
+
+          <MobileIcon onClick={handleClick}>
+            {clicked ? (
+              <img src='/images/close.svg' alt='Close menu' />
+            ) : (
+              <img src='/images/menu.svg' alt='Open menu' />
+            )}
+          </MobileIcon>
+
+          {/* <MobileMenu></MobileMenu> */}
 
           <NavigationList>
             <li>
