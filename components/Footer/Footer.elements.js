@@ -6,6 +6,10 @@ export const FooterWrapper = styled.footer`
   display: flex;
   justify-content: center;
   background-color: ${({ theme }) => theme.colors.black};
+
+  @media screen and (max-width: 768px) {
+    height: 50rem;
+  }
 `;
 
 export const FooterContent = styled.div`
@@ -16,6 +20,11 @@ export const FooterContent = styled.div`
 
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const LeftBlockFooter = styled.div`
@@ -29,6 +38,16 @@ export const LeftBlockFooter = styled.div`
   grid-template-columns: 1fr 1fr;
   column-gap: 3.5rem;
   grid-template-rows: 1fr;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    svg {
+      margin-bottom: 2rem;
+    }
+  }
 `;
 
 export const LogoAndSocialMediaBlock = styled.div`
@@ -69,6 +88,16 @@ export const NavigationList = styled.ul`
       opacity: 0.5;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 1.5rem;
+    row-gap: 1.5rem;
+    align-items: center;
+
+    li {
+      font-size: 1.4rem;
+    }
+  }
 `;
 
 export const RightBlockFooter = styled.div`
@@ -77,6 +106,13 @@ export const RightBlockFooter = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+  }
 `;
 
 export const GetAnInviteAction = styled.a`
@@ -102,4 +138,8 @@ export const CopyrightText = styled.span`
   color: ${({ theme }) => theme.colors.white};
   opacity: 0.5;
   font-size: 1.5rem;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 `;
