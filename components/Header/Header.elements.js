@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Link from 'next/link';
 
 export const HeaderWrapper = styled.header`
@@ -82,5 +82,59 @@ export const MobileIcon = styled.button`
 
   @media screen and (max-width: 768px) {
     display: block;
+  }
+`;
+
+export const MobileMenu = styled.div`
+  position: fixed;
+  width: 100vw;
+  background-color: white;
+  left: 0;
+  padding: 1rem 10rem;
+  top: ${({ clicked }) => (clicked ? '7.2rem' : '-7.2rem')};
+  opacity: ${({ clicked }) => (clicked ? '1' : '0')};
+`;
+
+export const MobileNavigationList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.2rem;
+
+  li {
+    font-size: 1.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  li:last-of-type {
+    margin-bottom: 1rem;
+  }
+`;
+
+export const CallToActionButtonMobile = styled.div`
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+
+  button {
+    outline: none;
+    border: none;
+    width: 30rem;
+    background-color: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.white};
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 2rem 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+    &:hover {
+      background-color: ${({ theme }) => theme.colors.grey};
+      color: ${({ theme }) => theme.colors.black};
+    }
   }
 `;

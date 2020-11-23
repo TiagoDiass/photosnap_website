@@ -8,6 +8,9 @@ import {
   NavigationList,
   CallToActionButton,
   MobileIcon,
+  MobileMenu,
+  MobileNavigationList,
+  CallToActionButtonMobile,
 } from './Header.elements';
 
 const Header = () => {
@@ -38,7 +41,27 @@ const Header = () => {
             )}
           </MobileIcon>
 
-          {/* <MobileMenu></MobileMenu> */}
+          {clicked && (
+            <MobileMenu clicked={clicked}>
+              <MobileNavigationList>
+                <li>
+                  <Link href='/'>Stories</Link>
+                </li>
+                <li>
+                  <Link href='/'>Features</Link>
+                </li>
+                <li>
+                  <Link href='/'>Pricing</Link>
+                </li>
+              </MobileNavigationList>
+
+              <hr />
+
+              <CallToActionButtonMobile>
+                <button>Get an invite</button>
+              </CallToActionButtonMobile>
+            </MobileMenu>
+          )}
 
           <NavigationList>
             <li>
