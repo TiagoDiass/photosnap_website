@@ -85,7 +85,7 @@ export const NavigationList = styled.ul`
     transition: opacity 0.25s ease;
 
     &:hover {
-      opacity: 0.5;
+      opacity: 0.8;
     }
   }
 
