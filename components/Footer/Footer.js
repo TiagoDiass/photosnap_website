@@ -1,4 +1,4 @@
-import { Arrow, Logo } from '..';
+import { Logo, CallToActionArrow } from '..';
 
 import {
   FooterWrapper,
@@ -8,7 +8,6 @@ import {
   LogoAndSocialMediaBlock,
   NavigationList,
   RightBlockFooter,
-  GetAnInviteAction,
   CopyrightText,
 } from './Footer.elements';
 
@@ -51,9 +50,7 @@ const Footer = () => {
         </LeftBlockFooter>
 
         <RightBlockFooter>
-          <GetAnInviteAction>
-            Get an Invite <Arrow />
-          </GetAnInviteAction>
+          <CallToActionArrow>Get an Invite</CallToActionArrow>
 
           <CopyrightText>Copyright 2020. All Rights Reserved</CopyrightText>
         </RightBlockFooter>

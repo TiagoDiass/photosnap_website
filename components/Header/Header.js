@@ -45,7 +45,7 @@ const Header = () => {
             <MobileMenu clicked={clicked}>
               <MobileNavigationList>
                 <li>
-                  <Link href='/'>Stories</Link>
+                  <Link href='/stories'>Stories</Link>
                 </li>
                 <li>
                   <Link href='/'>Features</Link>
@@ -65,7 +65,7 @@ const Header = () => {
 
           <NavigationList>
             <li>
-              <Link href='/'>Stories</Link>
+              <Link href='/stories'>Stories</Link>
             </li>
             <li>
               <Link href='/'>Features</Link>

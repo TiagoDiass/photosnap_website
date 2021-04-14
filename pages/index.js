@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const MY = styled.div`
-  height: 70vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@ const MY = styled.div`
 export default function Home() {
   return (
     <MY>
-      <h1>page</h1>
+      <h1>home page</h1>
     </MY>
   );
 }
