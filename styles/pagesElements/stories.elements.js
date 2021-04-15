@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.main`
   display: flex;
@@ -48,4 +48,27 @@ export const Banner = styled.section`
       font-weight: 300;
     }
   }
+`;
+
+export const StoriesContainer = styled.section`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+export const Story = styled.div`
+  height: 50rem;
+  ${({ backgroundImageName }) => css`
+    background: url('/images/pages/stories/${backgroundImageName}.jpg');
+  `}
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 25%;
+  transition: transform 0.3s ease;
+
+  /* &:hover {
+    transform: translateY(-22px);
+    cursor: pointer;
+  } */
 `;

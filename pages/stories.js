@@ -1,6 +1,7 @@
 import React from 'react';
 import { CallToActionArrow } from '../components';
 import * as S from '../styles/pagesElements/stories.elements';
+import storiesData from '../styles/pagesElements/stories';
 
 export default function stories() {
   return (
@@ -22,6 +23,14 @@ export default function stories() {
           <CallToActionArrow>Read the story</CallToActionArrow>
         </div>
       </S.Banner>
+
+      <S.StoriesContainer>
+        {storiesData.map((story, index) => (
+          <S.Story key={index} backgroundImageName={story.imageName}>
+            <div className='content'></div>
+          </S.Story>
+        ))}
+      </S.StoriesContainer>
     </S.Container>
   );
 }
