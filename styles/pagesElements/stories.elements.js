@@ -67,8 +67,8 @@ export const Story = styled.div`
   width: 25%;
   transition: transform 0.3s ease;
 
-  /* &:hover {
+  &:hover {
     transform: translateY(-22px);
     cursor: pointer;
-  } */
+  }
 `;
