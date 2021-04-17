@@ -121,7 +121,6 @@ export const Story = styled.div`
     display: flex;
     flex-direction: column;
     color: #fff;
-    /* background-color: #fff; */
 
     p.date {
       font-size: 1.2rem;
@@ -153,5 +152,13 @@ export const Story = styled.div`
         letter-spacing: 1px;
       }
     }
+  }
+
+  @media (max-width: 1160px) {
+    width: 50%;
+  }
+
+  @media (max-width: 580px) {
+    width: 100%;
   }
 `;
