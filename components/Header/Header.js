@@ -42,7 +42,7 @@ const Header = () => {
           </MobileIcon>
 
           {clicked && (
-            <MobileMenu clicked={clicked}>
+            <MobileMenu aria-expanded={clicked}>
               <MobileNavigationList>
                 <li>
                   <Link href='/stories'>Stories</Link>

@@ -1,5 +1,4 @@
-import styled, { keyframes } from 'styled-components';
-import Link from 'next/link';
+import styled from 'styled-components';
 
 export const HeaderWrapper = styled.header`
   height: 7.2rem;
@@ -85,14 +84,20 @@ export const MobileIcon = styled.button`
   }
 `;
 
-export const MobileMenu = styled.div`
+export const MobileMenu = styled.nav`
   position: fixed;
   width: 100vw;
   background-color: white;
   left: 0;
   padding: 1rem 10rem;
-  top: ${({ clicked }) => (clicked ? '7.2rem' : '-7.2rem')};
-  opacity: ${({ clicked }) => (clicked ? '1' : '0')};
+
+  top: -7.2rem;
+  opacity: 0;
+
+  &[aria-expanded='true'] {
+    top: 7.2rem;
+    opacity: 1;
+  }
 `;
 
 export const MobileNavigationList = styled.ul`
