@@ -54,6 +54,22 @@ export const Banner = styled.section`
       font-weight: 300;
     }
   }
+
+  @media (max-width: 1295px) {
+    background-position: center right;
+    .content {
+      width: 40%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 2rem;
+    background-position: center center;
+    .content {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
 `;
 
 export const StoriesContainer = styled.section`
