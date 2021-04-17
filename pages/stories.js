@@ -31,7 +31,7 @@ export default function stories() {
               <p className='date'>{story.date}</p>
               <h5 className='title'>{story.title}</h5>
               <span className='author'>by {story.author}</span>
-              <div className='button-wrapper'>
+              <div className='read-more-wrapper'>
                 <a href='#'>READ MORE</a>
                 <Arrow />
               </div>
