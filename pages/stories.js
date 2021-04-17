@@ -1,5 +1,5 @@
 import React from 'react';
-import { CallToActionArrow } from '../components';
+import { Arrow, CallToActionArrow } from '../components';
 import * as S from '../styles/pagesElements/stories.elements';
 import storiesData from '../styles/pagesElements/stories';
 
@@ -27,7 +27,15 @@ export default function stories() {
       <S.StoriesContainer>
         {storiesData.map((story, index) => (
           <S.Story key={index} backgroundImageName={story.imageName}>
-            <div className='content'></div>
+            <div className='content'>
+              <p className='date'>{story.date}</p>
+              <h5 className='title'>{story.title}</h5>
+              <span className='author'>by {story.author}</span>
+              <div className='button-wrapper'>
+                <a href='#'>READ MORE</a>
+                <Arrow />
+              </div>
+            </div>
           </S.Story>
         ))}
       </S.StoriesContainer>

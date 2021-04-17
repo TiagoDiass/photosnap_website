@@ -65,10 +65,33 @@ export const Story = styled.div`
   background-size: cover;
   background-position: center;
   width: 25%;
+  display: flex;
+  align-items: flex-end;
   transition: transform 0.3s ease;
+  justify-content: center;
 
-  &:hover {
+  /* &:hover {
     transform: translateY(-22px);
     cursor: pointer;
+  } */
+
+  .content {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    /* background-color: #fff; */
+
+    p.date {
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+      font-weight: 400;
+    }
+
+    h5.title {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
   }
 `;
