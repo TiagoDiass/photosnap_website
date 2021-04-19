@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import {
@@ -14,11 +14,11 @@ import {
 } from './Header.elements';
 
 const Header = () => {
-  const [clicked, setClicked] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const handleClick = () => {
-    setClicked(!clicked);
-  };
+  useEffect(() => {
+    console.log(isMobileMenuOpen);
+  }, [isMobileMenuOpen]);
 
   return (
     <>
@@ -33,18 +33,18 @@ const Header = () => {
             </Link>
           </HeaderLogo>
 
-          <MobileIcon onClick={handleClick}>
-            {clicked ? (
+          <MobileIcon onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+            {isMobileMenuOpen ? (
               <img src='/images/close.svg' alt='Close menu' />
             ) : (
               <img src='/images/menu.svg' alt='Open menu' />
             )}
           </MobileIcon>
 
-          {clicked && (
-            <MobileMenu aria-expanded={clicked}>
+          {isMobileMenuOpen && (
+            <MobileMenu isOpen={isMobileMenuOpen}>
               <MobileNavigationList>
-                <li>
+                <li onClick={() => setIsMobileMenuOpen(false)}>
                   <Link href='/stories'>Stories</Link>
                 </li>
                 <li>

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const HeaderWrapper = styled.header`
   height: 7.2rem;
@@ -85,19 +85,16 @@ export const MobileIcon = styled.button`
 `;
 
 export const MobileMenu = styled.nav`
-  position: fixed;
+  position: absolute;
   width: 100vw;
   background-color: white;
   left: 0;
   padding: 1rem 10rem;
 
-  top: -7.2rem;
-  opacity: 0;
-
-  &[aria-expanded='true'] {
-    top: 7.2rem;
-    opacity: 1;
-  }
+  ${(props) => css`
+    top: ${props.isOpen ? '7.2rem' : '-7.2rem'};
+    opacity: ${props.isOpen ? '1' : '0'};
+  `}
 `;
 
 export const MobileNavigationList = styled.ul`

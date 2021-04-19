@@ -24,7 +24,6 @@ export const Banner = styled.section`
 
   .content {
     color: #fff;
-    /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
@@ -98,6 +97,7 @@ export const Story = styled.div`
     transform: translateY(-22px);
     cursor: pointer;
 
+    /* Border animation in bottom side */
     &::before {
       content: '';
       position: absolute;
