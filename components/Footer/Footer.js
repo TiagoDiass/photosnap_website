@@ -26,7 +26,11 @@ const Footer = () => {
       <FooterContent>
         <LeftBlockFooter>
           <LogoAndSocialMediaBlock>
-            <Logo />
+            <Link href='/'>
+              <a href='/'>
+                <Logo />
+              </a>
+            </Link>
 
             <SocialMediaRow>
               {socialMedias.map((socialMedia, index) => (
