@@ -1,6 +1,6 @@
-import React from 'react';
 import styled from 'styled-components';
 import { Arrow } from '..';
+import Link from 'next/link';
 
 const CallToAction = styled.a`
   text-transform: uppercase;
@@ -25,10 +25,16 @@ const CallToAction = styled.a`
   }
 `;
 
-export default function CallToActionArrow({ children }) {
+export default function CallToActionArrow({
+  children,
+  isArrowLight = true,
+  href = '',
+}) {
   return (
-    <CallToAction>
-      {children} <Arrow />
-    </CallToAction>
+    <Link href={href} passHref>
+      <CallToAction>
+        {children} <Arrow isArrowLight={isArrowLight} />
+      </CallToAction>
+    </Link>
   );
 }
