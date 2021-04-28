@@ -16,10 +16,6 @@ import {
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    console.log(isMobileMenuOpen);
-  }, [isMobileMenuOpen]);
-
   return (
     <>
       <Head>

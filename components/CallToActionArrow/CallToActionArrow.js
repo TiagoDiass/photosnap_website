@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Arrow } from '..';
 
-export const CallToAction = styled.a`
+const CallToAction = styled.a`
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.25rem;
