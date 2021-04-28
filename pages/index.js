@@ -49,13 +49,13 @@ export default function Home() {
           ))}
         </S.StoriesWrapper>
 
-        <S.BenefitsWrapper>
-          <S.BenefitsContent>
+        <S.FeaturesWrapper>
+          <S.FeaturesContent>
             {features.map((feature, index) => (
               <FeatureBlock key={index} feature={feature} />
             ))}
-          </S.BenefitsContent>
-        </S.BenefitsWrapper>
+          </S.FeaturesContent>
+        </S.FeaturesWrapper>
       </S.Container>
     </>
   );

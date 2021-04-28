@@ -19,7 +19,7 @@ export const StoriesWrapper = styled.section`
   }
 `;
 
-export const BenefitsWrapper = styled.section`
+export const FeaturesWrapper = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -29,7 +29,7 @@ export const BenefitsWrapper = styled.section`
   background-color: #fff;
 `;
 
-export const BenefitsContent = styled.div`
+export const FeaturesContent = styled.div`
   width: 75%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
