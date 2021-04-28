@@ -43,11 +43,11 @@ const Header = () => {
                 <li onClick={() => setIsMobileMenuOpen(false)}>
                   <Link href='/stories'>Stories</Link>
                 </li>
-                <li>
-                  <Link href='/'>Features</Link>
+                <li onClick={() => setIsMobileMenuOpen(false)}>
+                  <Link href='/features'>Features</Link>
                 </li>
-                <li>
-                  <Link href='/'>Pricing</Link>
+                <li onClick={() => setIsMobileMenuOpen(false)}>
+                  <Link href='/pricing'>Pricing</Link>
                 </li>
               </MobileNavigationList>
 
@@ -64,10 +64,10 @@ const Header = () => {
               <Link href='/stories'>Stories</Link>
             </li>
             <li>
-              <Link href='/'>Features</Link>
+              <Link href='/features'>Features</Link>
             </li>
             <li>
-              <Link href='/'>Pricing</Link>
+              <Link href='/pricing'>Pricing</Link>
             </li>
           </NavigationList>
           <CallToActionButton>Get an invite</CallToActionButton>

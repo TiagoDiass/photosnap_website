@@ -1,4 +1,3 @@
-import React from 'react';
 import { CallToActionArrow } from '..';
 import * as S from './MainBanner.elements';
 
