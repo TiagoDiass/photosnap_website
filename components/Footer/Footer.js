@@ -1,4 +1,5 @@
 import { Logo, CallToActionArrow } from '..';
+import Link from 'next/link';
 
 import {
   FooterWrapper,
@@ -35,16 +36,16 @@ const Footer = () => {
           </LogoAndSocialMediaBlock>
           <NavigationList>
             <li>
-              <a href='#'>Home</a>
+              <Link href='/'>Home</Link>
             </li>
             <li>
-              <a href='#'>Stories</a>
+              <Link href='/stories'>Stories</Link>
             </li>
             <li>
-              <a href='#'>Features</a>
+              <Link href='/features'>Features</Link>
             </li>
             <li>
-              <a href='#'>Pricing</a>
+              <Link href='/pricing'>Pricing</Link>
             </li>
           </NavigationList>
         </LeftBlockFooter>
