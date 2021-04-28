@@ -18,3 +18,26 @@ export const StoriesWrapper = styled.section`
     grid-template-columns: 1fr;
   }
 `;
+
+export const BenefitsWrapper = styled.section`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 45rem;
+  padding: 3rem 0;
+  background-color: #fff;
+`;
+
+export const BenefitsContent = styled.div`
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 3rem;
+  }
+`;

@@ -1,8 +1,15 @@
 import * as S from '../styles/pagesElements/home.elements';
-import { LandingSection, MainBanner, StoryCard } from '../components';
+import {
+  BenefitBlock,
+  LandingSection,
+  MainBanner,
+  StoryCard,
+} from '../components';
 import storiesData from '../styles/pagesElements/stories.json';
+import benefitsData from '../styles/pagesElements/benefits.json';
 
 const stories = [0, 1, 2, 3].map((i) => storiesData[i]);
+const benefits = [0, 1, 2].map((i) => benefitsData[i]);
 
 export default function Home() {
   return (
@@ -36,6 +43,14 @@ export default function Home() {
           <StoryCard story={story} key={index} />
         ))}
       </S.StoriesWrapper>
+
+      <S.BenefitsWrapper>
+        <S.BenefitsContent>
+          {benefits.map((benefit, index) => (
+            <BenefitBlock key={index} benefit={benefit} />
+          ))}
+        </S.BenefitsContent>
+      </S.BenefitsWrapper>
     </S.Container>
   );
 }
