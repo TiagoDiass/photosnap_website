@@ -1,26 +1,29 @@
-import { CallToActionArrow } from '../components';
-import * as S from '../styles/pagesElements/home.elements';
+import { MainBanner } from '../components';
 
 export default function Home() {
   return (
-    <>
-      <S.MainBanner>
-        <S.LeftTextContainer>
-          <S.LeftTextContentWrapper>
-            <h1>Create and share your photo stories</h1>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <MainBanner
+        height={67}
+        heading='Create and share your photo stories'
+        paragraph='Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.'
+        showCallToAction
+        imageUrl='/images/pages/home/hero.jpg'
+      />
 
-            <p>
-              Photosnap is a platform for photographers and visual storytellers.
-              We make it easy to share photos, tell stories and connect with
-              others.
-            </p>
+      <MainBanner
+        height={50}
+        heading='Features'
+        paragraph='We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories'
+        imageUrl='/images/pages/features/hero.jpg'
+      />
 
-            <CallToActionArrow>Get an Invite</CallToActionArrow>
-          </S.LeftTextContentWrapper>
-        </S.LeftTextContainer>
-
-        <S.RightBlockImageContainer />
-      </S.MainBanner>
-    </>
+      <MainBanner
+        height={50}
+        heading='Pricing'
+        paragraph='Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.'
+        imageUrl='/images/pages/pricing/hero.jpg'
+      />
+    </div>
   );
 }
