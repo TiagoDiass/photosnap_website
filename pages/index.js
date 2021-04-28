@@ -1,16 +1,16 @@
 import Head from 'next/head';
 import * as S from '../styles/pagesElements/home.elements';
 import {
-  BenefitBlock,
+  FeatureBlock,
   LandingSection,
   MainBanner,
   StoryCard,
 } from '../components';
 import storiesData from '../styles/pagesElements/stories.json';
-import benefitsData from '../styles/pagesElements/benefits.json';
+import featuresData from '../styles/pagesElements/features.json';
 
 const stories = [0, 1, 2, 3].map((i) => storiesData[i]);
-const benefits = [0, 1, 2].map((i) => benefitsData[i]);
+const features = [0, 1, 2].map((i) => featuresData[i]);
 
 export default function Home() {
   return (
@@ -51,8 +51,8 @@ export default function Home() {
 
         <S.BenefitsWrapper>
           <S.BenefitsContent>
-            {benefits.map((benefit, index) => (
-              <BenefitBlock key={index} benefit={benefit} />
+            {features.map((feature, index) => (
+              <FeatureBlock key={index} feature={feature} />
             ))}
           </S.BenefitsContent>
         </S.BenefitsWrapper>

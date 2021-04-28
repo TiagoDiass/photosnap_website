@@ -1,8 +1,12 @@
+import Head from 'next/head';
 import { MainBanner } from '../components';
 
 export default function Features() {
   return (
     <>
+      <Head>
+        <title>Photosnap | Features</title>
+      </Head>
       <MainBanner
         height={50}
         heading='Features'
