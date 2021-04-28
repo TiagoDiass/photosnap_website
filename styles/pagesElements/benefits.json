@@ -13,5 +13,20 @@
     "imagePath": "/images/benefits/embed.svg",
     "title": "Available to Embedt",
     "description": "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more."
+  },
+  {
+    "imagePath": "/images/benefits/custom-domain.svg",
+    "title": "Custom Domain",
+    "description": "With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!"
+  },
+  {
+    "imagePath": "/images/benefits/boost-exposure.svg",
+    "title": "Boost Your Exposure",
+    "description": "Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list."
+  },
+  {
+    "imagePath": "/images/benefits/drag-drop.svg",
+    "title": "Drag & Drop Image",
+    "description": "Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories."
   }
 ]
