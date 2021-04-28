@@ -1,8 +1,12 @@
+import * as S from '../styles/pagesElements/home.elements';
 import { LandingSection, MainBanner } from '../components';
+import storiesData from '../styles/pagesElements/stories.json';
+
+const stories = [0, 1, 2, 3].map((i) => storiesData[i]);
 
 export default function Home() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <S.Container>
       <MainBanner
         height={67}
         heading='Create and share your photo stories'
@@ -26,6 +30,6 @@ export default function Home() {
         imageUrl='/images/pages/home/designed-for-everyone.jpg'
         imageOnLeft={false}
       />
-    </div>
+    </S.Container>
   );
 }

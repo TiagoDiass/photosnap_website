@@ -5,3 +5,4 @@ export { default as Logo } from './Logo/Logo';
 export { default as CallToActionArrow } from './CallToActionArrow/CallToActionArrow';
 export { default as MainBanner } from './MainBanner/MainBanner';
 export { default as LandingSection } from './LandingSection/LandingSection';
+export { default as StoryCard } from './StoryCard/StoryCard';

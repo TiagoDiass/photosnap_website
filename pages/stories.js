@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { Arrow, CallToActionArrow } from '../components';
+import { Arrow, CallToActionArrow, StoryCard as Story } from '../components';
 import * as S from '../styles/pagesElements/stories.elements';
 import storiesData from '../styles/pagesElements/stories.json';
 
@@ -31,17 +31,7 @@ export default function stories() {
 
         <S.StoriesContainer>
           {storiesData.map((story, index) => (
-            <S.Story key={index} backgroundImageName={story.imageName}>
-              <div className='content'>
-                <p className='date'>{story.date}</p>
-                <h5 className='title'>{story.title}</h5>
-                <span className='author'>by {story.author}</span>
-                <div className='read-more-wrapper'>
-                  <a href='#'>READ MORE</a>
-                  <Arrow />
-                </div>
-              </div>
-            </S.Story>
+            <Story key={index} story={story} />
           ))}
         </S.StoriesContainer>
       </S.Container>
