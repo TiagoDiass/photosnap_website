@@ -56,7 +56,7 @@ export default class MyDocument extends Document {
             content='Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.'
           />
 
-          <meta property='og:image' content='/images/thumbnail.png' />
+          <meta property='og:image' content='/thumbnail.png' />
         </Head>
         <body>
           <Main />
