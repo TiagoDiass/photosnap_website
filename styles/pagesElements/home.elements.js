@@ -13,8 +13,12 @@ export const MainBanner = styled.section`
   }
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @media (max-width: 500px) {
+    height: 80vh;
   }
 `;
 
@@ -22,6 +26,10 @@ export const LeftTextContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    height: 50%;
+  }
 `;
 
 export const LeftTextContentWrapper = styled.main`
@@ -73,4 +81,8 @@ export const RightBlockImageContainer = styled.div`
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
+
+  @media (max-width: 768px) {
+    height: 50%;
+  }
 `;
