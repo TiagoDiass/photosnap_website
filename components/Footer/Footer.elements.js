@@ -112,7 +112,7 @@ export const RightBlockFooter = styled.div`
     flex-direction: column;
     align-items: center;
     row-gap: 2rem;
-    width: 60%;
+    width: 80%;
   }
 `;
 
