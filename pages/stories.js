@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { Arrow, CallToActionArrow, StoryCard as Story } from '../components';
+import { CallToActionArrow, StoryCard as Story } from '../components';
 import * as S from '../styles/pagesElements/stories.elements';
 import storiesData from '../styles/pagesElements/stories.json';
 
