@@ -82,8 +82,7 @@ export const RightBlockImageContainer = styled.div`
   `}
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: center;
-  background-position-y: center;
+  background-position: center center;
 
   @media (max-width: 768px) {
     height: 50%;
