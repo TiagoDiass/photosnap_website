@@ -14,7 +14,7 @@ import {
 
 const socialMedias = [
   { src: '/images/social-media-svgs/facebook.svg', alt: 'Our Facebook' },
-  { src: '/images/social-media-svgs/youtube.svg', alt: 'Our Youtube' },
+  { src: '/images/social-media-svgs/youtube.svg', alt: 'Our Youtube Channel' },
   { src: '/images/social-media-svgs/twitter.svg', alt: 'Our Twitter' },
   { src: '/images/social-media-svgs/pinterest.svg', alt: 'Our Pinterest' },
   { src: '/images/social-media-svgs/instagram.svg', alt: 'Our Instagram' },
@@ -34,7 +34,12 @@ const Footer = () => {
 
             <SocialMediaRow>
               {socialMedias.map((socialMedia, index) => (
-                <img src={socialMedia.src} alt={socialMedia.alt} key={index} />
+                <img
+                  src={socialMedia.src}
+                  alt={socialMedia.alt}
+                  key={index}
+                  title={socialMedia.alt}
+                />
               ))}
             </SocialMediaRow>
           </LogoAndSocialMediaBlock>
