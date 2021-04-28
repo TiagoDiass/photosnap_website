@@ -1,5 +1,5 @@
 import * as S from '../styles/pagesElements/home.elements';
-import { LandingSection, MainBanner } from '../components';
+import { LandingSection, MainBanner, StoryCard } from '../components';
 import storiesData from '../styles/pagesElements/stories.json';
 
 const stories = [0, 1, 2, 3].map((i) => storiesData[i]);
@@ -30,6 +30,12 @@ export default function Home() {
         imageUrl='/images/pages/home/designed-for-everyone.jpg'
         imageOnLeft={false}
       />
+
+      <S.StoriesWrapper>
+        {stories.map((story, index) => (
+          <StoryCard story={story} key={index} />
+        ))}
+      </S.StoriesWrapper>
     </S.Container>
   );
 }

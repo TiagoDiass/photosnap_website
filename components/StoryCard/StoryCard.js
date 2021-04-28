@@ -10,7 +10,7 @@ export default function StoryCard({ story }) {
         <span className='author'>by {story.author}</span>
         <div className='read-more-wrapper'>
           <a href='#'>READ MORE</a>
-          <Arrow />
+          <Arrow isArrowLight={true} />
         </div>
       </div>
     </S.StoryContainer>

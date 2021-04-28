@@ -8,6 +8,7 @@ const GradientHorizontal = keyframes`
 
 export const StoryContainer = styled.article`
   height: 50rem;
+  width: 100%;
   ${({ backgroundImageName }) => css`
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
       url('/images/pages/stories/${backgroundImageName}.jpg');
@@ -15,7 +16,6 @@ export const StoryContainer = styled.article`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 25%;
   display: flex;
   align-items: flex-end;
   transition: transform 0.3s ease;
@@ -81,13 +81,5 @@ export const StoryContainer = styled.article`
         letter-spacing: 1px;
       }
     }
-  }
-
-  @media (max-width: 1160px) {
-    width: 50%;
-  }
-
-  @media (max-width: 580px) {
-    width: 100%;
   }
 `;
