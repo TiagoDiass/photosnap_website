@@ -34,7 +34,7 @@ export const PlansSection = styled.section`
 export const PlanBlock = styled.article`
   ${({ contrast }) => css`
     width: 350px;
-    height: ${contrast ? '100%' : '90%'};
+    height: 100%;
     background-color: ${contrast ? '#000' : 'rgb(245, 245, 245)'};
 
     padding: 4rem 5rem;
